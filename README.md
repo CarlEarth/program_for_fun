@@ -1,6 +1,6 @@
 # program_for_fun
 
-breadcrumbs (Output text animation)
+breadcrumbs (Output text animation):
 
 The code include a function and a example.
 
