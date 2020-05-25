@@ -21,6 +21,7 @@ def output(string,re=0): # recursive method
 
 		#string[0:1]=0,string[0:2]=0~1 ...string[0:x]=0~(x-1)
 		sys.stdout.write("\r"+string[0:i])
+		sys.stdout.flush()
 		time.sleep(0.06) #delay time add every new character
 
 		if (string[i-1]==" "): #Save the position of the blank in the string.
@@ -32,18 +33,23 @@ def output(string,re=0): # recursive method
 			# string[0~p_blank](character_+1 blank)			
 			for j in range(i,p_blank,-1):#61 ~ (p_blank+1)
 				sys.stdout.write("\r"+string[0:j]) 
+				sys.stdout.flush()
 				#print string[0~60] (61c) to string[0~p_blank](character_+1 blank)
 				time.sleep(0.06)
 				sys.stdout.write("\r"+string_[0:61]) #Cover the previous string in blank.
+				sys.stdout.flush()
 
 			sys.stdout.write("\r"+string[0:j]+"\n") #To next line
+			sys.stdout.flush()
 			new_string=string[p_blank+1:len(string)] #Set that is not outputed
 			output(new_string,1) #recursion
 			i=len(string) #Exit loop.
 		i=i+1
 	if (re==0):
 		sys.stdout.write("\n")
+		sys.stdout.flush()
 		sys.stdout.write("\n")
+		sys.stdout.flush()
 		time.sleep(0.02)
 #Example:
 output("The ghost in the machine (I, robot):")
@@ -56,3 +62,4 @@ output("how do we explain this? Random pieces of code? or is it something else."
 output("When does a perceptual schematic become consciousness? ")
 output("When does the difference engine become the search for truth?")
 output("When does the personality simulation become the bitter mote of a soul?")
+
