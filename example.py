@@ -1,4 +1,5 @@
-from breadcrumb import output
+from breadcrumbs import output
+import time
 
 #Example:
 output("The ghost in the machine (I, robot):")
