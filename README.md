@@ -1,16 +1,16 @@
 # program_for_fun
 
-breadcrumbs (Output text animation):
+Animation of text output:
 
 The code includes:
-breadcrumb.py: Animation module
-example.py: The usage of module make the sentence output look like the computer talking. 
+breadcrumb.py: Animation module  
+example.py: The usage of module make the sentence output look like the computer talking.   
 
-The function, "output", can output the sentence in animation.
-If the line is longer than the seting, it also do backspce animation
-and print the remaining words in the next line.
+The function, "output.py", can output the sentence in animation.  
+If the line is longer than the setting, it also do backspace animation  
+and print the remaining words in the next line.  
 
-The example is from the movie, "I, Robot", which is recorded by Dr. Lanning.
-It is a important breadcrumb in the story.
-This is one of favorite moive, so I take it as the name of my module.
+The content of example is from the movie, "I, Robot", which is recorded by Dr. Lanning.  
+It is a important breadcrumb in the story.  
+This is one of my favorite moive, so I take it as the name of my module.  
 
